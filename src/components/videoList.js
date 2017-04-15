@@ -1,12 +1,12 @@
 angular.module('video-player')
 
 .controller('videoController', function($scope) {
-	$scope.videos = exampleVideoData;
+	$scope.video = exampleVideoData;
 })
 .directive('videoList', function() {
   return {
   	scope: {
-  		videos: '<'
+  		video: '<'
   	},
 	  // controllerAs: "props",
 	  // bindToController: true,

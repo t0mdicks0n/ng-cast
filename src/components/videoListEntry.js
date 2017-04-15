@@ -1,7 +1,7 @@
 angular.module('video-player')
 
 .controller('video', function($scope) {
-	// console.log($scope)
+	console.log($scope)
 }).directive('videoListEntry', function() {
 
   	return {
@@ -9,10 +9,15 @@ angular.module('video-player')
   		video: '<'
   	},
   	restrict: 'E',
-	controllerAs: "vids",
+	controllerAs: "ctrl",
 	bindToController: true,
-	controller : function($scope) {
-	  console.log($scope.$parent.videos)
+	controller : function() {
+	  // console.log($scope.$parent.videos)
+	  // console.log($scope.$parent.videos)
+	  // var youtubeVids = $scope.$parent.videos;
+
+
+
 	},
 	templateUrl: "src/templates/videoListEntry.html"
   };

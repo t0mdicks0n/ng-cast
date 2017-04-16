@@ -1,15 +1,17 @@
 <div id="app container">
   <nav class="navbar">
+    
+
     <div class="col-md-6 col-md-offset-3">
       <search><h5><em>search</em>Component goes here</h5></search>
     </div>
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player video="videos[0]""><h5><em></em> component goes here</h5></video-player>
+      <video-player video="currentVideo"><h5><em></em> component goes here</h5></video-player>
     </div>
     <div class="col-md-5">
-      <video-list videos="videos"><h5><em>videoList</em> component goes here</h5></video-list>
+      <video-list videos="videos" ng-click="selectVideo"><h5><em>videoList</em> component goes here</h5></video-list>
     </div>
   <div>
 </div>

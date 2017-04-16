@@ -3,7 +3,8 @@ angular.module('video-player')
 .directive('videoList', function() {
   return {
   	scope: {
-  		videos: '<'
+  		videos: '<',
+  		selectVideo: '<'
   	},
   	restrict: 'E',
   	controller: 'videoController',
